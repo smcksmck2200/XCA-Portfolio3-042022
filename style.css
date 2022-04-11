@@ -1,138 +1,161 @@
-
-body{margin: 0;
+body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     border: 2px solid rgb(194, 194, 209);
-  
 }
-header{
+
+header {
     flex: .5;
 }
-.banner{
+
+.banner {
     display: flex;
     color: rgb(49, 24, 24);
-    background-color: rgb(194, 194, 209);
+    background-color: rgb(241, 175, 7);
     font-size: x-large;
     align-content: center;
-    justify-content: space-evenly; 
-    height: 25px; 
+    justify-content: space-evenly;
+    height: 25px;
     padding: 14px 20px;
-} 
+}
+
 .navbar {
-        
     display: flex;
-     flex-direction: row;
+    flex-direction: row;
     color: white;
-    background-color: rgb(194, 194, 209);
+    background-color: rgb(241, 175, 7);
     align-content: center;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
     text-decoration: none;
     font-size: x-large;
     padding: 14px 20px;
-    font-weight: 900;     
+    font-weight: 900;
 }
-.navbar :hover{
+
+.navbar :hover {
     display: flex;
     color: rgb(241, 175, 7);
-      
 }
 
-
-#aboutme{
-    display: flex; 
-     color: rgb(241, 175, 7);
-
+#aboutme {
+    flex: 20%;
+    display: flex;
+    color: rgb(241, 175, 7);
+    display: flex;
+    flex-direction: column;
 }
 
-   
-
-.sidebar{
-    flex: 30%;
+.sidebar {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(49, 24, 24);
     padding: 20px;
 }
 
-#streetart{
-        
+#pic1left {
+    display: flex;
+    height: 1000px;
     width: 100%;
-    height:250px; 
-       
 }
 
-#url{
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#url {
     display: flex;
     color: rgb(241, 175, 7);
     background-color: rgb(49, 24, 24);
-    text-decoration: none;  
+    text-decoration: none;
     font-family: roboto, sans-serif;
     font-size: 14px;
-   margin-top: 15px;
+    margin-top: 15px;
     width: 110px;
     height: 17px;
-    padding: 5px;   
+    padding: 5px;
+}
 
-}
-#biggie{
-   margin-right: 50px;
-    height:200px;
+#pic2left {
+    display: flex;
+    margin-right: 50px;
+    height: 200px;
     width: 200px;
+    padding-bottom: 10px;
+    background-color: solid rgb(194, 194, 209);
 }
-#mcs{
-    height:200px;
-    width: 200px;   
+
+#pic3left {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    padding-bottom: 10px;
 }
-#rightside{
-  
+
+#rightside {
+    flex: 60%;
     flex-direction: column;
     display: flex;
-
+    color: rgb(241, 175, 7);
 }
-.content{
-    flex: 70%;
+
+.content {
     background-color: rgb(49, 24, 24);
     display: flex;
     flex-direction: column;
-    align-content: center;    
+    align-content: center;
+    padding: 20px;
 }
-.experience{
+
+.experience {
     display: flex;
-    
     justify-content: center;
     font-size: xx-large;
 }
-#blindspot{
-    height:200px;
-    width: 95%;
-    flex-direction: row;
-    border: 2px solid rgb(194, 194, 209);
+
+#blindspotimg {
     display: flex;
+    background-image: url("https://media.istockphoto.com/photos/chocolate-money-coins-stacked-on-white-picture-id171159662?k=20&m=171159662&s=612x612&w=0&h=aQ7ZOROKpzlrGEF0vjfmORduvTw8818UI8M3BC4ntaE=");
+    height: 200px;
+    width: 95%;
+    border: 3px solid rgb(194, 194, 209);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.Iam{
+
+.Iam {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
 }
-.blindspot2{
 
+.blindspot2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 20px;
 }
-@media screen and (max-width: 800px) {
-    .row {   
-      flex-direction: column;
-      justify-content: space-evenly;
-      gap: 20;
-    }
-  }
 
-footer{
-    flex: 2;
-    color: rgb(49, 24, 24);
-    background-color: rgb(194, 194, 209);
+@media screen and (min-width: 800px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 20;
+    }
+}
+
+footer {
+    flex: 20%;
+    display: flex;
+    background-color: rgb(241, 175, 7);
+    color: rgb(241, 175, 7);
 }
